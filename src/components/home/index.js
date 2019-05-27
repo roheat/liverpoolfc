@@ -4,8 +4,8 @@ import Featured from './featured';
 
 const Home = () => {
 	return (
-		<div className="bck_blue">
-
+		<div className="bck_home">
+			<Featured />
 		</div>
 	);
 };

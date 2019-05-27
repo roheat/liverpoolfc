@@ -13,9 +13,14 @@ a {
     display: inline-block;
 }
 
-.bck_blue {
-    background: #0d1831;
+.bck_footer {
+    background: #1F2823 url("../images/lines-diensten.svg") no-repeat;
 }
+
+.bck_home {
+    background: #1F2823 url("../images/lines-diensten.svg") center no-repeat;
+}
+
 
 .bck_lblue {
     background: #98c5e9;
@@ -184,12 +189,20 @@ footer .footer_disclaimer {
     position: absolute;
 }
 
-.featured_number {
-    font-size: 270px;
+.featured_icon {
+    font-size: 60px;
     color: #ffffff;
     transform: translate(260px,170px);
     position: absolute;
 }
+
+.featured_heading {
+    font-size: 60px;
+    color: #ffffff;
+    transform: translate(260px,170px);
+    position: absolute;
+}
+
 
 .featured_player {
     width: 500px;
@@ -200,19 +213,19 @@ footer .footer_disclaimer {
 }
 .featured_first {
     position: absolute;
-    background: #0e1731;
-    color: #ffffff;
-    font-size: 92px;
-    text-transform: uppercase;
+    background: #ffffff;
+    color: #1F2823;
+    font-size: 70px;
+    /*text-transform: uppercase;*/
     padding: 0px 20px;
 }
 
 .featured_second {
     position: absolute;
-    background: #0e1731;
-    color: #ffffff;
-    font-size: 92px;
-    text-transform: uppercase;
+    background: #ffffff;
+    color: #1F2823;
+    font-size: 70px;
+    /*text-transform: uppercase;*/
     padding: 0px 20px;
 }
 

@@ -4,7 +4,7 @@ import { LiverpoolLogo } from '../ui/icons';
 class Footer extends React.Component {
 	render() {
 		return (
-			<footer className="bck_blue">
+			<footer className="bck_footer">
 				<div className="footer_logo">
 					<LiverpoolLogo 
 						link={true}
