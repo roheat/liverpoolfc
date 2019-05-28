@@ -212,7 +212,7 @@ footer .footer_disclaimer {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #F61C3A;
+    background: #E31B23;
     padding: 50px 0px;
 }
 
@@ -421,7 +421,8 @@ footer .footer_disclaimer {
     position: relative;
 }
 .player_card_wrapper .player_card_number {
-    color: #d6ecfe;
+    color: #E31B23;
+    opacity: 0.4;
     font-size: 185px;
     text-align: right;
     line-height: 160px;

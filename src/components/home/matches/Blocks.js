@@ -25,7 +25,7 @@ class Blocks extends React.Component {
 	showMatches = (matches) => (
 		matches ?
 			matches.map((match) => (
-				<Slide bottom>
+				<Slide bottom key={match.id}>
 					<div className="item">
 						<div className="wrapper">
 							<MatchesBlock match={match} />

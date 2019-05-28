@@ -16,7 +16,7 @@ class Header extends React.Component {
 					backgroundColor: '#1F2823',
 					boxShadow: 'none',
 					padding: '10px 0',
-					borderBottom: '2px solid #F61C3A'
+					borderBottom: '2px solid #E31B23'
 				}}
 			>
 				<Toolbar style={{ display: 'flex'}}>
