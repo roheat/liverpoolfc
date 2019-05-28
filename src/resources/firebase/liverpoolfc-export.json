@@ -172,13 +172,6 @@
       "number" : "22",
       "position" : "Keeper"
     },
-    "-LEvJNVy2U77dYIa-iwZ" : {
-      "image" : "c0aa5747-1109-41ac-a5be-d1e61186d66c.png",
-      "lastname" : "Kelleher",
-      "name" : "Caoimhin",
-      "number" : "62",
-      "position" : "Keeper"
-    },
     "-LEvJX0DU85wQE7CoRvT" : {
       "image" : "1bc2e700-8285-4b3d-8377-63b20f7d11c1.png",
       "lastname" : "van Dijk",
@@ -221,20 +214,6 @@
       "number" : "32",
       "position" : "Defence"
     },
-    "-LEvKNzwLsfhVIt-yFi-" : {
-      "image" : "eb3435cc-d9b1-46b8-8140-43146c024813.png",
-      "lastname" : "Phillips",
-      "name" : "Nathaniel",
-      "number" : "47",
-      "position" : "Defence"
-    },
-    "-LEvKNzwLsfhVIt2yFi1" : {
-      "image" : "eb3435cc-d9b1-46b8-8140-43146c024813.png",
-      "lastname" : "Camacho",
-      "name" : "Rafael",
-      "number" : "64",
-      "position" : "Defence"
-    },
     "-LEvKNzwLsfxVIz-yFiJ" : {
       "image" : "eb3435cc-d9b1-46b8-8140-43146c024813.png",
       "lastname" : "Alexander Arnold",
@@ -245,7 +224,7 @@
     "-LEvKbivY2TXDpzPaRbK" : {
       "image" : "f0bb773f-42c8-4995-84b5-232ab667e7a4.png",
       "lastname" : "Fabinho",
-      "name" : "J",
+      "name" : "-",
       "number" : "3",
       "position" : "Midfield"
     },
@@ -340,7 +319,7 @@
       "number" : "24",
       "position" : "Striker"
     },
-    "-LEvLX7EaVyZT7HSzSqf" : {
+    "-LEvLX7EaVyZT7HSzSQz" : {
       "image" : "ed6a4a80-e36c-4641-9280-b3404e57a5a2.png",
       "lastname" : "Origi",
       "name" : "Divock",

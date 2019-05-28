@@ -18,9 +18,8 @@ a {
 }
 
 .bck_home {
-    background: #1F2823 url("../images/lines-diensten.svg") center no-repeat;
+    background: #1F2823;
 }
-
 
 .bck_lblue {
     background: #98c5e9;
@@ -172,6 +171,7 @@ footer .footer_disclaimer {
     margin-top: 50px;
     height: 700px;
     overflow: hidden;
+    background: url("../images/lines-diensten.svg") no-repeat center;
 }
 
 .featured_text {
@@ -213,19 +213,18 @@ footer .footer_disclaimer {
 
 .home_matches_wrapper {
     background: #F61C3A;
-    margin-top:9px;
     padding: 50px 0px;
 }
 
 .home_matches_wrapper .home_matches {
     flex-wrap: wrap;
     display: flex;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .home_matches_wrapper .home_matches .item {
     width: 50%;
-    margin: 35px 0px;
+    margin: 25px 0px;
 }
 
 .home_matches_wrapper .home_matches .item .wrapper {
@@ -279,7 +278,7 @@ footer .footer_disclaimer {
 
 .match_block .match_wrapper .match_top .right,
 .match_block .match_wrapper .match_bottom .right { 
-    background: #0e1731;
+    background: #1F2823;
     width: 70px;
     color: #ffffff;
     font-size: 50px;

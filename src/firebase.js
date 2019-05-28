@@ -12,5 +12,13 @@ const firebaseConfig = {
   appId: "1:614576990786:web:658baa21db188579"
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+const firebaseDB = firebase.database();
+const firebaseMatches = firebaseDB.ref('matches');
+
+export {
+  firebase,
+  firebaseDB,
+  firebaseMatches
+}
