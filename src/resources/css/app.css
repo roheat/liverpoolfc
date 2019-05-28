@@ -169,29 +169,17 @@ footer .footer_disclaimer {
 .featured_wrapper {
     margin: 0 auto;
     width: 1280px;
-    margin-top: -60px;
-    height: 800px;
+    margin-top: 50px;
+    height: 700px;
     overflow: hidden;
 }
 
-.featured_stripes {
-    position: relative
-}
 .featured_text {
     position: relative;
     font-family: 'Righteous', cursive;
 }
 
-
-.featured_stripes .stripe {
-    width: 230px;
-    height: 1200px;
-    position: absolute;
-}
-
 .featured_icon {
-    font-size: 60px;
-    color: #ffffff;
     transform: translate(260px,170px);
     position: absolute;
 }
@@ -202,7 +190,6 @@ footer .footer_disclaimer {
     transform: translate(260px,170px);
     position: absolute;
 }
-
 
 .featured_player {
     width: 500px;
@@ -216,25 +203,16 @@ footer .footer_disclaimer {
     background: #ffffff;
     color: #1F2823;
     font-size: 70px;
-    /*text-transform: uppercase;*/
     padding: 0px 20px;
 }
 
-.featured_second {
-    position: absolute;
-    background: #ffffff;
-    color: #1F2823;
-    font-size: 70px;
-    /*text-transform: uppercase;*/
-    padding: 0px 20px;
-}
 
 /*=============================
             MATCHES HOME
 ===============================*/
 
 .home_matches_wrapper {
-    background: #98c5e9;
+    background: #F61C3A;
     margin-top:9px;
     padding: 50px 0px;
 }
