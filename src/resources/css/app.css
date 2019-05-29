@@ -169,7 +169,7 @@ footer .footer_disclaimer {
     margin: 0 auto;
     width: 1280px;
     margin-top: 50px;
-    height: 700px;
+    height: 730px;
     overflow: hidden;
     background: url("../images/lines-diensten.svg") no-repeat center;
 }
@@ -452,29 +452,29 @@ footer .footer_disclaimer {
     padding: 30px 0px 130px 0px;
 }
 
-.promotion_wrapper .promotion_animation {
+.promotion_wrapper .promotion_jersey {
     display: flex;
     padding: 80px 0px 30px 0px;
 }
 
-.promotion_wrapper .promotion_animation .left { 
+.promotion_wrapper .promotion_jersey .left { 
     text-transform: uppercase;
     text-transform: uppercase;
     font-size: 150px;
     font-family: 'Righteous', cursive;
     flex-grow: 1;
-    color:#d5ebfd;
+    color:#E31B23;
     line-height: 135px;
 }
-.promotion_wrapper .promotion_animation .left span {
+.promotion_wrapper .promotion_jersey .left span {
     display:block;
  }
 
-.promotion_wrapper .promotion_animation .right {
+.promotion_wrapper .promotion_jersey .right {
     line-height: 135px;
 }
 
-.promotion_wrapper .promotion_animation .right div{
+.promotion_wrapper .promotion_jersey .right div{
     width: 280px;
     height: 280px;
     background-size: contain !important;
