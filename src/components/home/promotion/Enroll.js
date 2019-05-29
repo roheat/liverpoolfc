@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 import FormField from '../../ui/form_field';
 import { validate } from '../../ui/misc';
+import { firebasePromotions } from '../../../firebase';
 
 class Enroll extends React.Component {
 	
@@ -46,7 +47,7 @@ class Enroll extends React.Component {
 		});
 	}
 
-	resetForm = () => {
+	resetForm = (reset) => {
 		let newFormdata = {...this.state.formdata};
 
 		for(let key in newFormdata) {
@@ -58,7 +59,7 @@ class Enroll extends React.Component {
 		this.setState({
 			formError: false,
 			formdata: newFormdata,
-			formSuccess: 'Congratulations! You have enrolled successfully.'
+			formSuccess: reset ? 'Congratulations! Enrolled successfully.' : 'You have already enrolled!'
 		});
 
 		this.displaySuccessMessage();
@@ -82,8 +83,19 @@ class Enroll extends React.Component {
 		}
 
 		if(isValid) {
-			console.log(dataToSubmit);
-			this.resetForm();
+			firebasePromotions
+			.orderByChild('email')
+			.equalTo(dataToSubmit.email)
+			.once('value')
+			.then((snapshot) => {
+				if(snapshot.val() === null) {
+					firebasePromotions.push(dataToSubmit);
+					this.resetForm(true);
+				} else {
+					this.resetForm(false);
+				}
+			});
+
 		} else {
 			this.setState({ formError: true });
 		}
@@ -110,7 +122,9 @@ class Enroll extends React.Component {
 							}
 							<div className="success_label">{this.state.formSuccess}</div>
 							<button onClick={(event) => this.submitForm(event)}>Enroll</button>
-
+							<div className="enroll_disclaimer">
+								We will notify the winner via email. Stay tuned!
+							</div>
 						</div>
 					</form>
 				</div>
