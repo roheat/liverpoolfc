@@ -15,7 +15,9 @@ const PromotionJersey = () => {
 				</Zoom>
 			</div>
 			<div className="right">
-				<div style={{ background: `url(${Jersey})` }}></div>
+				<Zoom>
+					<div style={{ background: `url(${Jersey})` }}></div>
+				</Zoom>
 			</div>
 		</div>
 	);
