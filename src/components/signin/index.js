@@ -106,7 +106,7 @@ class SignIn extends React.Component {
 							<div className="error_label">Something is wrong. Try again!</div>
 							: null
 						}
-						<button onSubmit={(event) => this.submitForm(event)}>Log In</button>
+						<button onClick={(event) => this.submitForm(event)}>Log In</button>
 					</form>
 				</div>
 			</div>

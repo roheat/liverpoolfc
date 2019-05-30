@@ -3,10 +3,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Routes from '../routes';
 
-const App = () => {
+const App = (props) => {
 	return (
 		<BrowserRouter>
-			<Routes />
+			<Routes {...props} />
 		</BrowserRouter>
 	);
 };
