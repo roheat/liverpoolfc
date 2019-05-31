@@ -598,11 +598,11 @@ footer .footer_disclaimer {
     flex-grow: 1;
 }
 
-.select_team_layout input[name=result_local_input],
+.select_team_layout input[name=result_home_input],
 .select_team_layout input[name=result_away_input] {
     width: 60px;
     text-align: center;
-    background: #98c6e9;
+    background: #1F2823;
     color: #ffffff;
 }
 
