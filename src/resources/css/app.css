@@ -71,16 +71,17 @@ button {
 }
 
 .success_label {
-    color: #98c5e9;
+    color: #E31B23;
     font-weight: 600;
     margin: 10px 0px;
 }
 
-.label_inputs {
+.label_input {
     font-size: 20px;
     margin: 10px 0px;
     font-weight: 300;
-    background: #e5f4ff;
+    background: #E31B23;
+    color: #ffffff;
     padding: 10px;
     display: inline-block;
 }
@@ -122,10 +123,11 @@ button {
     top: 0;
     position: absolute;
     right: 0;
-    background: #98c6e9;
+    background: #E31B23;
     color: #ffffff;
     border: 1px solid white;
     padding: 10px;
+    cursor: pointer;
 }
 
 .not_found_container {
@@ -568,7 +570,7 @@ footer .footer_disclaimer {
 
 .admin_container .matches_tag_red {
     font-weight: 700;
-    color: #F44336;
+    color: #E31B23;
 }
 
 .admin_container .matches_tag_green {
@@ -579,7 +581,7 @@ footer .footer_disclaimer {
 .admin_container h2 {
     margin: 0px 0px 50px 0px;
     border-bottom: 1px solid #dbdbdb;
-    color: #414141;
+    color: #1F2823;
     font-size: 40px;
 }
 
@@ -609,7 +611,8 @@ footer .footer_disclaimer {
 .admin_submit button {
     font-size: 20px;
     margin: 40px 0px;
-    background: #009688;
+    background: #1F2823;
+    cursor: pointer;
 }
 
 /*=============================

@@ -25,7 +25,7 @@ const FormField = ({ id, formdata, change }) => {
 					<div>
 						{
 							formdata.showLabel ?
-							<div className="label_inputs">
+							<div className="label_input">
 								{formdata.config.label}
 							</div>
 							:null
@@ -44,7 +44,7 @@ const FormField = ({ id, formdata, change }) => {
 					<div>
 						{
 							formdata.showLabel ?
-							<div className="label_inputs">
+							<div className="label_input">
 								{formdata.config.label}
 							</div>
 							:null

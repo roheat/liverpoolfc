@@ -294,7 +294,7 @@ class AddEditMatch extends React.Component {
 								change={(element) => this.updateForm(element)}
 							/>
 							<div className="select_team_layout">
-								<div className="label_inputs">Home Team</div>
+								<div className="label_input">Home Team</div>
 								<div className="wrapper">
 									<div className="left">
 										<FormField 
@@ -314,7 +314,7 @@ class AddEditMatch extends React.Component {
 							</div>
 
 							<div className="select_team_layout">
-								<div className="label_inputs">Away Team</div>
+								<div className="label_input">Away Team</div>
 								<div className="wrapper">
 									<div className="left">
 										<FormField 

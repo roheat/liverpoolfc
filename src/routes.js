@@ -7,6 +7,8 @@ import SignIn from './components/signin';
 import Dashboard from './components/admin/Dashboard';
 import AdminMatches from './components/admin/matches';
 import AddEditMatch from './components/admin/matches/AddEditMatch';
+import AdminPlayers from './components/admin/players';
+import AddEditPlayer from './components/admin/players/AddEditPlayer';
 
 import PrivateRoute from './components/auth_routes/PrivateRoute';
 import PublicRoute from './components/auth_routes/PublicRoute';
@@ -20,6 +22,24 @@ const Routes = (props) => {
 					exact 
 					path="/dashboard" 
 					component={Dashboard} 
+				/>
+				<PrivateRoute 
+					{...props} 
+					exact 
+					path="/admin/players/add_edit/" 
+					component={AddEditPlayer}
+				/>
+				<PrivateRoute 
+					{...props} 
+					exact 
+					path="/admin/players/add_edit/:id" 
+					component={AddEditPlayer}
+				/>
+				<PrivateRoute 
+					{...props} 
+					exact 
+					path="/admin/players" 
+					component={AdminPlayers}
 				/>
 				<PrivateRoute 
 					{...props} 
