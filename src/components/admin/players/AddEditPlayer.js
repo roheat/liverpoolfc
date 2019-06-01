@@ -2,7 +2,7 @@ import React from 'react';
 
 import AdminLayout from '../../hoc/AdminLayout';
 import FormField from '../../ui/form_field';
-import { validate, firebaseLooper } from '../../ui/misc';
+import { validate } from '../../ui/misc';
 import { firebase, firebaseDB, firebasePlayers } from '../../../firebase';
 import UploadFile from '../../ui/upload_file';
 

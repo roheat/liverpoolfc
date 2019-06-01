@@ -9,6 +9,7 @@ import AdminMatches from './components/admin/matches';
 import AddEditMatch from './components/admin/matches/AddEditMatch';
 import AdminPlayers from './components/admin/players';
 import AddEditPlayer from './components/admin/players/AddEditPlayer';
+import TheTeam from './components/the_team';
 
 import PrivateRoute from './components/auth_routes/PrivateRoute';
 import PublicRoute from './components/auth_routes/PublicRoute';
@@ -71,6 +72,13 @@ const Routes = (props) => {
 					exact 
 					path="/" 
 					component={Home}
+					restricted={false}
+				/>
+				<PublicRoute
+					{...props}
+					exact 
+					path="/the_team" 
+					component={TheTeam}
 					restricted={false}
 				/>
 			</Switch>
