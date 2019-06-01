@@ -1,6 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Promise } from 'core-js';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 import PlayerCard from '../ui/player_card';
 import { firebasePlayers, firebase } from '../../firebase';
@@ -103,7 +104,10 @@ class TheTeam extends React.Component {
 							</div>
 						</div>
 					</div>
-					:null
+					: 
+					<div className="progress">
+						<CircularProgress thickness={7} style={{ color: '#E31B23' }} />
+					</div>
 				}
 				</div>
 			</div>
