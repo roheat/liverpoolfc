@@ -9,7 +9,7 @@ class Blocks extends React.Component {
 	
 	state = {
 		matches: []
-	};
+	}
 
 	componentDidMount() {
 		firebaseMatches

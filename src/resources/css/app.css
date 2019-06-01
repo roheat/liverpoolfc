@@ -21,10 +21,6 @@ a {
     background: #1F2823;
 }
 
-.bck_lblue {
-    background: #98c5e9;
-}
-
 .img_cover {
     background-size: cover !important;
 }
@@ -173,7 +169,6 @@ footer .footer_disclaimer {
     margin-top: 50px;
     height: 730px;
     overflow: hidden;
-    background: url("../images/lines-diensten.svg") no-repeat center;
 }
 
 .featured_text {
@@ -536,7 +531,7 @@ footer .footer_disclaimer {
     font-size: 22px;
     color: #ffffff;
     background: #1F2823;
-    border-bottom: 1px solid #01285e;
+    text-align: center;
 }
 
 .the_matches_wrapper .progress {
