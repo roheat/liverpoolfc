@@ -31,10 +31,10 @@ class Header extends React.Component {
 						</div>
 					</div>
 					
-					<Link to="the_team">
+					<Link to="/the_team">
 						<Button color="inherit">Team</Button>
 					</Link>
-					<Link to="the_matches">
+					<Link to="/the_matches">
 						<Button color="inherit">Matches</Button>
 					</Link>
 					<LiverBird
