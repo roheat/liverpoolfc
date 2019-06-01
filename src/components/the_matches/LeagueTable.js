@@ -69,11 +69,7 @@ class LeagueTable extends React.Component {
             :null
     )
 
-    
-   
-
     render() {
-        
         return (
             <div className="league_table_wrapper">
                 <div className="title">

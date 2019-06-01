@@ -2,12 +2,16 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import Routes from '../routes';
+import ScrollToTop from './ui/scroll_to_top';
 
 const App = (props) => {
 	return (
 		<BrowserRouter>
-			<Routes {...props} />
+			<ScrollToTop>
+				<Routes {...props} />
+			</ScrollToTop>
 		</BrowserRouter>
+		
 	);
 };
 

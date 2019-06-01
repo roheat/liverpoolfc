@@ -1,15 +1,12 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-import ScrollToTop from '../ui/scroll_to_top';
-
 const PublicRoute = ({
 	user,
 	component: Component,
 	...rest
 }) => {
 	return (
-		<ScrollToTop>
 		<Route {...rest} component={(props) => (
 				rest.restricted ?
 				(
@@ -20,7 +17,6 @@ const PublicRoute = ({
 				: <Component {...props} user={user} />
 			)} 
 		/>
-		</ScrollToTop>
 	);
 };
 

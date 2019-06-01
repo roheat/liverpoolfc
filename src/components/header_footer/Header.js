@@ -37,6 +37,9 @@ class Header extends React.Component {
 					<Link to="/the_matches">
 						<Button color="inherit">Matches</Button>
 					</Link>
+					<Link to="/dashboard">
+						<Button color="inherit">Dashboard</Button>
+					</Link>
 					<LiverBird
 						width="50px"
 						height="70px"
