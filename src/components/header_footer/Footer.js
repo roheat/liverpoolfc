@@ -16,6 +16,9 @@ class Footer extends React.Component {
 				<div className="footer_disclaimer">
 					Liverpool Football Club. All Rights Reserved.
 				</div>
+				<div className="footer_credits">
+					Created with <div className="heart"></div> by <a target="_blank" href="https://github.com/roheat/liverpoolfc">roheat</a>.
+				</div>
 			</footer>
 		);
 	}

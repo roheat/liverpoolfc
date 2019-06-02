@@ -14,7 +14,7 @@ a {
 }
 
 .bck_footer {
-    background: #1F2823 url("../images/lines-diensten.svg") no-repeat;
+    background: #1F2823;
 }
 
 .bck_home {
@@ -154,10 +154,37 @@ footer .img_cover{
    margin:0 auto;
 }
 
-footer .footer_disclaimer {
+footer .footer_disclaimer, .footer_credits {
     margin: 10px 0px;
 }
 
+footer a:hover {
+    color: #E31C24;
+}
+
+.heart {
+  background-color: red;
+  height: 10px;
+  transform: rotate(-45deg);
+  width: 10px;
+  margin: 0px 5px 0px 5px;
+  display: inline-block;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #E31C24;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.heart:before {
+  top: -5px;
+  left: 0;
+}
 
 /*=============================
             FEATURED
@@ -209,7 +236,7 @@ footer .footer_disclaimer {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #E31B23;
+    background: #9F1318;
     padding: 50px 0px;
 }
 
@@ -419,8 +446,8 @@ footer .footer_disclaimer {
     position: relative;
 }
 .player_card_wrapper .player_card_number {
-    color: #E31B23;
-    opacity: 0.4;
+    color: #9F1318;
+    /*opacity: 0.4;*/
     font-size: 185px;
     text-align: right;
     line-height: 160px;
@@ -555,6 +582,8 @@ footer .footer_disclaimer {
     min-height: 100vh;
     background: #1F2823;
     border-right: 2px solid #1F2823;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .admin_container  .admin_right {
@@ -675,8 +704,7 @@ footer .footer_disclaimer {
 .user_dashboard {
     font-size: 60px;
     font-family: 'Righteous', cursive;
-    color: #E31B23;
-    opacity: 0.4;
+    color: #9F1318;
     text-align: center;
     margin-top: 200px;
 }
