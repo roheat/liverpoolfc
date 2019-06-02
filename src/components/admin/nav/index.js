@@ -47,7 +47,7 @@ const AdminNav = () => {
 		firebase.auth()
 		.signOut()
 		.then(() => {
-			console.log('logged out!')
+			
 		}).catch(e => console.log(e))
 	}
 

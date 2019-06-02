@@ -106,7 +106,7 @@ class TheTeam extends React.Component {
 					</div>
 					: 
 					<div className="progress">
-						<CircularProgress thickness={7} style={{ color: '#E31B23' }} />
+						<CircularProgress thickness={7} style={{ color: '#D10022' }} />
 					</div>
 				}
 				</div>

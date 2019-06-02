@@ -57,7 +57,6 @@ class TheMatches extends React.Component {
 	render() {
 		const {
 			isLoading,
-			matches,
 			filterMatches,
 			statusFilter,
 			resultFilter
@@ -128,7 +127,7 @@ class TheMatches extends React.Component {
 						{
 							isLoading ?
 							<div className="progress">
-								<CircularProgress thickness={7} style={{ color: '#E31B23' }} />
+								<CircularProgress thickness={7} style={{ color: '#D10022' }} />
 							</div>
 							: <MatchesList matches={filterMatches} />
 						}

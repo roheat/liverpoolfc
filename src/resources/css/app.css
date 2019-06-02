@@ -67,7 +67,7 @@ button {
 }
 
 .success_label {
-    color: #E31B23;
+    color: #D10022;
     font-weight: 600;
     margin: 10px 0px;
 }
@@ -76,7 +76,7 @@ button {
     font-size: 20px;
     margin: 10px 0px;
     font-weight: 300;
-    background: #E31B23;
+    background: #D10022;
     color: #ffffff;
     padding: 10px;
     display: inline-block;
@@ -119,7 +119,7 @@ button {
     top: 0;
     position: absolute;
     right: 0;
-    background: #E31B23;
+    background: #D10022;
     color: #ffffff;
     border: 1px solid white;
     padding: 10px;
@@ -137,7 +137,6 @@ button {
     font-family: 'Righteous', cursive;
     color: #d5ebfe;
 }
-
 
 /*=============================
             HEADER FOOTER
@@ -159,11 +158,11 @@ footer .footer_disclaimer, .footer_credits {
 }
 
 footer a:hover {
-    color: #E31C24;
+    color: #D10022;
 }
 
 .heart {
-  background-color: red;
+  background-color: #D10022;
   height: 10px;
   transform: rotate(-45deg);
   width: 10px;
@@ -174,7 +173,7 @@ footer a:hover {
 .heart:before,
 .heart:after {
   content: "";
-  background-color: #E31C24;
+  background-color: #D10022;
   border-radius: 50%;
   height: 10px;
   position: absolute;
@@ -236,7 +235,7 @@ footer a:hover {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #9F1318;
+    background: #D10022;
     padding: 50px 0px;
 }
 
@@ -312,7 +311,7 @@ footer a:hover {
 
 .match_box_big {
     width:100%;
-    border-bottom: 2px solid #E31B23;
+    border-bottom: 2px solid #D10022;
     padding: 20px;
     box-sizing: border-box;
     height: 150px;
@@ -380,7 +379,7 @@ footer a:hover {
 }
 
 .match_filters .option.active {
-    background: #E31B23;
+    background: #D10022;
     color: #fff;
 }
 
@@ -446,8 +445,7 @@ footer a:hover {
     position: relative;
 }
 .player_card_wrapper .player_card_number {
-    color: #9F1318;
-    /*opacity: 0.4;*/
+    color: #D10022;
     font-size: 185px;
     text-align: right;
     line-height: 160px;
@@ -461,7 +459,7 @@ footer a:hover {
 .player_card_wrapper .player_card_name span { 
     display: block;
     font-size: 25px;
-    color: #0d1831;
+    color: #1F2823;
 }
 
 .home_text_wrapper {
@@ -488,7 +486,7 @@ footer a:hover {
     font-size: 150px;
     font-family: 'Righteous', cursive;
     flex-grow: 1;
-    color:#E31B23;
+    color:#D10022;
     line-height: 135px;
 }
 .promotion_wrapper .promotion_jersey .left span {
@@ -596,7 +594,7 @@ footer a:hover {
 
 .admin_container .matches_tag_red {
     font-weight: 700;
-    color: #E31B23;
+    color: #D10022;
 }
 
 .admin_container .matches_tag_green {
@@ -617,7 +615,13 @@ footer a:hover {
     width: 480px;
 }
 
- 
+.admin_delete {
+    font-size: 20px;
+    background: #D10022;
+    cursor: pointer;
+    border: none;
+}
+
 .select_team_layout .wrapper{
     display: flex;
 }
@@ -636,9 +640,46 @@ footer a:hover {
 
 .admin_submit button {
     font-size: 20px;
-    margin: 40px 0px;
     background: #1F2823;
     cursor: pointer;
+}
+
+/*=============================
+            MODAL
+===============================*/
+
+.modal_container {
+    position: absolute;
+    width: 600;
+    background-color: #ffffff;
+    display: block;
+    font-family: Roboto;
+    font-weight: 400;
+    outline: none;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px 20px; 
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal_container .cancel {
+    background-color: #ffffff;
+    color: #1F2823;
+    margin-right: 10px; 
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.modal_container .delete {
+    background-color: #D10022;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 /*=============================
@@ -697,7 +738,7 @@ footer a:hover {
 
 .signin_wrapper h2 {
     font-family: 'Righteous', cursive;
-    color: #E31B23;
+    color: #D10022;
     font-size: 50px;
 }
 

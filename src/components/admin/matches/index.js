@@ -77,7 +77,7 @@ class AdminMatches extends React.Component {
 					<div className="admin_progress">
 						{
 							this.state.isLoading ?
-							<CircularProgress thickness={7} style={{ color: '#E31B23' }} />
+							<CircularProgress thickness={7} style={{ color: '#D10022' }} />
 							: ''
 						}
 					</div>

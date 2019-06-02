@@ -4,6 +4,7 @@ import AdminLayout from '../../hoc/AdminLayout';
 import FormField from '../../ui/form_field';
 import { validate, firebaseLooper } from '../../ui/misc';
 import { firebaseTeams, firebaseDB, firebaseMatches } from '../../../firebase';
+import ModalBox from '../../ui/modal';
 
 class AddEditMatch extends React.Component {
 	
@@ -13,6 +14,7 @@ class AddEditMatch extends React.Component {
 		formError: false,
 		formSuccess: '',
 		teams: [],
+		open: false,
 		formdata: {
 			date: {
 				element: 'input',
@@ -279,7 +281,17 @@ class AddEditMatch extends React.Component {
 		} else {
 			this.setState({ formError: true });
 		}
-	} 
+	}
+
+	deleteMatch = (matchId) => {
+		firebaseDB
+		.ref(`matches/${matchId}`)
+		.remove()
+		.then(() => {
+			this.setState({ open: false });
+			this.props.history.push('/admin/matches');
+		})
+	}
 
 	render() {
 		return (
@@ -368,14 +380,24 @@ class AddEditMatch extends React.Component {
 							<div className="admin_submit">
 								<button onClick={(event) => this.submitForm(event)}>{this.state.formTitle}</button>
 							</div>
-							{
-								this.state.formTitle === 'Edit Match' ?
-								<div className="delete">
-									<button onClick={(event) => this.submitForm(event)}>Delete</button>
-								</div>
-								: null
-							}
 						</form>
+						{
+							this.state.formTitle === 'Edit Match' ?
+							<button
+								onClick={() => this.setState({ open: true})}
+								className="admin_delete"
+							>
+								Delete Match
+							</button>
+							: null
+						}
+						<ModalBox
+								open={this.state.open}
+								handleClose={() => this.setState({ open: false })}
+								handleDelete={() => this.deleteMatch(this.state.matchId)}
+								title="Delete Match" 
+	 							content={`Are you sure you want to delete the match with id: ${this.state.matchId}?`}
+						/>
 					</div>
 				</div>
 				

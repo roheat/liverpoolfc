@@ -14,7 +14,7 @@ const style ={
         borderBottom: '1px solid #ffffff',
         color: '#ffffff',
         textAlign: 'center',
-        background: '#E31B23'
+        background: '#D10022'
     },
     highlightedCell: {
         padding: '4px 16px 4px 11px',
