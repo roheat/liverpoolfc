@@ -298,7 +298,7 @@ class AddEditMatch extends React.Component {
 			<AdminLayout>
 				<div className="editmatch_dialog_wrapper">
 					<h2>{this.state.formTitle}</h2>
-					<div>
+					<div className="editmatch_container">
 						<form onSubmit={(event) => this.submitForm(event)}>
 							<FormField 
 								id={'date'}

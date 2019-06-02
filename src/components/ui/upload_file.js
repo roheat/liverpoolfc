@@ -10,7 +10,7 @@ class UploadFile extends React.Component {
 		name: '',
 		isUploading: false,
 		fileURL: ''
-	};
+	}
 
 	static getDerivedStateFromProps(props, state) {
 		if(props.defaultImg) {

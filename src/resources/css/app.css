@@ -574,6 +574,7 @@ footer a:hover {
 .admin_container {
     margin-top: 96px;
     display:flex;
+    height: 1400px;
 }
 
 .admin_container .admin_left_nav {
@@ -619,7 +620,10 @@ footer a:hover {
     font-size: 20px;
     background: #D10022;
     cursor: pointer;
-    border: none;
+    border: 0px;
+    float: left;
+    margin-top: 10px;
+
 }
 
 .select_team_layout .wrapper{
@@ -680,6 +684,7 @@ footer a:hover {
     color: #ffffff;
     cursor: pointer;
     font-size: 20px;
+    border: 0px;
 }
 
 /*=============================
@@ -745,7 +750,7 @@ footer a:hover {
 .user_dashboard {
     font-size: 60px;
     font-family: 'Righteous', cursive;
-    color: #9F1318;
+    color: #D10022;
     text-align: center;
     margin-top: 200px;
 }

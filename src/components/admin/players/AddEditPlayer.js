@@ -5,6 +5,7 @@ import FormField from '../../ui/form_field';
 import { validate } from '../../ui/misc';
 import { firebase, firebaseDB, firebasePlayers } from '../../../firebase';
 import UploadFile from '../../ui/upload_file';
+import ModalBox from '../../ui/modal';
 
 class AddEditPlayer extends React.Component {
 	
@@ -14,6 +15,7 @@ class AddEditPlayer extends React.Component {
 		formSuccess: '',
 		formTitle: '',
 		players: [],
+		open: false,
 		formdata: {
 			name: {
 				element: 'input',
@@ -213,6 +215,30 @@ class AddEditPlayer extends React.Component {
 		this.updateForm({id: 'image'}, filename);
 	}
 
+	deleteMatch = (playerId) => {
+		//let filename;
+		firebaseDB
+		.ref(`players/${playerId}`)
+		.once('value')
+		.then(snapshot => { return snapshot.val().image})
+		.then(filename => {
+			firebase
+			.storage()
+			.ref("players")
+			.child(filename)
+			.delete()
+		})
+		.then(() => {
+			firebaseDB
+			.ref(`players/${playerId}`)
+			.remove()
+			.then(() => {
+				this.setState({ open: false });
+				this.props.history.push('/admin/players');
+			})
+		})
+	}
+
 	render() {
 		return (
 			<AdminLayout>
@@ -260,6 +286,23 @@ class AddEditPlayer extends React.Component {
 								<button onClick={(event) => this.submitForm(event)}>{this.state.formTitle}</button>
 							</div>
 						</form>
+						{
+							this.state.formTitle === 'Edit Player' ?
+							<button
+								onClick={() => this.setState({ open: true})}
+								className="admin_delete"
+							>
+								Delete Player
+							</button>
+							: null
+						}
+						<ModalBox
+								open={this.state.open}
+								handleClose={() => this.setState({ open: false })}
+								handleDelete={() => this.deleteMatch(this.state.playerId)}
+								title="Delete Player" 
+	 							content={`Are you sure you want to delete the player with id: ${this.state.playerId}?`}
+						/>
 					</div>
 				</div>
 			</AdminLayout>
