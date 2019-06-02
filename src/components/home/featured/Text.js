@@ -26,7 +26,7 @@ class Text extends React.Component {
 						className="featured_icon"
 						style={{
 							opacity,
-							transform: `translate(260px, 170px) rotateY(${rotate}deg)`
+							transform: `translate(370px, 170px) rotateY(${rotate}deg)`
 						}}
 					>
 						<LiverBird
@@ -45,12 +45,12 @@ class Text extends React.Component {
 			show={true}
 			start={{
 				opacity: 0,
-				x: 500,
+				x: 700,
 				y: 330
 			}}
 			enter={{
 				opacity: [1],
-				x: [260],
+				x: [370],
 				y: [330],
 				timing: {delay: 500, duration: 1000, ease: easePolyOut}
 			}}
@@ -76,12 +76,12 @@ class Text extends React.Component {
 			show={true}
 			start={{
 				opacity: 0,
-				x: 500,
+				x: 700,
 				y: 500
 			}}
 			enter={{
 				opacity: [1],
-				x: [200],
+				x: [370],
 				y: [500],
 				timing: {delay: 500, duration: 1000, ease: easePolyOut}
 			}}
@@ -120,7 +120,7 @@ class Text extends React.Component {
 						style={{
 							opacity,
 							background: `url(${FeaturedPlayer})`,
-							transform: 'translate(550px, 200px)'
+							transform: 'translate(650px, 130px)'
 						}}
 					>
 					</div>

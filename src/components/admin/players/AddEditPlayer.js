@@ -90,7 +90,7 @@ class AddEditPlayer extends React.Component {
 				valid: true
 			}
 		}
-	};
+	}
 
 	componentDidMount() {
 		const playerId = this.props.match.params.id;

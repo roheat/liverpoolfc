@@ -368,6 +368,13 @@ class AddEditMatch extends React.Component {
 							<div className="admin_submit">
 								<button onClick={(event) => this.submitForm(event)}>{this.state.formTitle}</button>
 							</div>
+							{
+								this.state.formTitle === 'Edit Match' ?
+								<div className="delete">
+									<button onClick={(event) => this.submitForm(event)}>Delete</button>
+								</div>
+								: null
+							}
 						</form>
 					</div>
 				</div>

@@ -165,7 +165,7 @@ footer .footer_disclaimer {
 
 .featured_wrapper {
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     margin-top: 50px;
     height: 730px;
     overflow: hidden;
@@ -189,8 +189,8 @@ footer .footer_disclaimer {
 }
 
 .featured_player {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     position: absolute;
