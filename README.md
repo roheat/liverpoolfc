@@ -1,4 +1,4 @@
-# LiverpoolFC
+# [LiverpoolFC](https://liverpoolfc-2df96.firebaseapp.com/)
 
 ![Liverpool FC](screenshots/home.gif)
 
@@ -22,6 +22,8 @@
 Liverpool FC is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football.
 
 I have created a front end web app for the team with details about the matches and team players. The app has a clean UI, animation effects and an admin dashboard with user authentication to Add/Edit/Delete matches and players.
+
+Have a look at the Live version [here](https://liverpoolfc-2df96.firebaseapp.com/).
 
 #### Technologies
 
@@ -50,12 +52,12 @@ $ cd liverpoolfc
 $ npm install
 ```
 
-####`Step 4` - [Add Firebase to the project](https://firebase.google.com/docs/web/setup) and provide your app's Firebase project configuration to `/src/firebase.js`.
+#### `Step 4` - [Add Firebase to the project](https://firebase.google.com/docs/web/setup) and provide your app's Firebase project configuration to `/src/firebase.js`.
 
 #### `Step 5` - Run application
 
 ```bash
-$ npm run start
+$ npm start
 ```
 
 In browser, open [http://localhost:3000](http://localhost:3000)
