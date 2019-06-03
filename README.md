@@ -1,68 +1,108 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LiverpoolFC
 
-## Available Scripts
+![Liverpool FC](screenshots/home.gif)
 
-In the project directory, you can run:
+> A front end app created using React. Used Firebase for database, storage and authentication.
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Table of Contents
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- [Description](#description)
+- [Installation](#installation)
+- [What I Learned](#what-i-learned)
+- [References](#references)
+- [License](#license)
+- [Info](#info)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
 
-### `npm run build`
+Liverpool FC is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I have created a front end web app for the team with details about the matches and team players. The app has a clean UI, animation effects and an admin dashboard with user authentication to Add/Edit/Delete matches and players.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#### Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- Firebase
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `Step 1` - Clone the repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+$ git clone https://github.com/roheat/liverpoolfc.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### `Step 2` - cd in the repo
 
-## Learn More
+```bash
+$ cd liverpoolfc
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### `Step 3` - Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ npm install
+```
 
-### Code Splitting
+####`Step 4` - [Add Firebase to the project](https://firebase.google.com/docs/web/setup) and provide your app's Firebase project configuration to `/src/firebase.js`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### `Step 5` - Run application
 
-### Analyzing the Bundle Size
+```bash
+$ npm run start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+In browser, open [http://localhost:3000](http://localhost:3000)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## What I Learned
 
-### Advanced Configuration
+* Single page application routing using react router
+* Animations using react move and react reveal
+* Using firebase with react
+* Authentication with email and password using firebase
+* Form validation and verification
+* Handling file upload in firebase storage using react firebase file uploader
+* Add/Edit/Delete data in firebase database from react front end
+* Creating a folder structure from sratch for a react app
+* Material UI
+* Writing custom CSS
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+---
 
-### Deployment
+## References
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- [React](https://reactjs.org/)
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+- [React Move](https://react-move.js.org/#/)
+- [React Reveal](https://www.react-reveal.com/)
+- [Firebase](https://firebase.google.com/docs)
+- [React Firebase File Uploader](https://github.com/fris-fruitig/react-firebase-file-uploader)
+- [d3-ease](https://github.com/d3/d3-ease)
+- [Material UI](https://material-ui.com/)
+- [Premier League - Liverpool](https://www.premierleague.com/clubs/10/Liverpool/overview)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+
+MIT © [roheat](https://github.com/roheat)
+
+---
+
+## Info
+
+- Website - [roheat](https://roheat.com)
+- Twitter - [@roheatdotcom](https://twitter.com/roheatdotcom)
+- LinkedIn - [Rohith Srivathsav](https://www.linkedin.com/in/rohith-srivathsav/)
+
+<div align="center">
+  <sub>If you found a bug or some improvement, feel free to raise an issue and send a PR!</sub>
+</div>
